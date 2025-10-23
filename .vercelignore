@@ -1,0 +1,13 @@
+src/
+config/
+templates/
+tests/
+tmp/
+logs/
+vendor/
+composer.json
+composer.lock
+phpunit.xml.dist
+phpcs.xml
+psalm.xml
+phpstan.neon
