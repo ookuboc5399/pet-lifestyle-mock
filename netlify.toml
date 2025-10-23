@@ -1,18 +1,16 @@
 [build]
-  publish = "webroot"
-  command = "composer install --no-dev --optimize-autoloader"
-
-[build.environment]
-  PHP_VERSION = "8.2"
-  COMPOSER_HOME = "/opt/buildhome/.composer"
+  publish = "."
+  command = "echo 'Static site build complete'"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.php"
+  from = "/"
+  to = "/static-index.html"
   status = 200
 
-[functions]
-  directory = "netlify/functions"
+[[redirects]]
+  from = "/chat"
+  to = "/chat.html"
+  status = 200
 
 [[headers]]
   for = "/*"
