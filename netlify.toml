@@ -1,9 +1,10 @@
 [build]
   publish = "webroot"
-  command = "echo 'No build step required for PHP'"
+  command = "composer install --no-dev --optimize-autoloader"
 
 [build.environment]
   PHP_VERSION = "8.1"
+  COMPOSER_HOME = "/opt/buildhome/.composer"
 
 [[redirects]]
   from = "/*"
@@ -19,3 +20,4 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
+    Cache-Control = "public, max-age=31536000"
