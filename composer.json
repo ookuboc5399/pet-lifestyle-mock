@@ -15,7 +15,7 @@
     "require-dev": {
         "cakephp/debug_kit": "^5.0",
         "cakephp/cakephp-codesniffer": "^5.0",
-        "phpunit/phpunit": "^10.0"
+        "phpunit/phpunit": "^13.4"
     },
     "suggest": {
         "markstory/asset_compress": "An asset compression plugin which provides file concatenation and a flexible JavaScript and CSS minification.",
